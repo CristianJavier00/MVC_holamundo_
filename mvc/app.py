@@ -1,11 +1,10 @@
-import web  # web.py library
+import web
 
-# Define the URL mappings
 urls = (
-    "/", "mvc.controllers.index.Index",
+    '/', 'mvc.controllers.index.Index',
 )
 
-app = web.application(urls, globals())  # Instantiate the application
+app = web.application(urls, globals())
 
 if __name__ == "__main__":  # If run as main
     web.config.debug = False  # Debug mode
